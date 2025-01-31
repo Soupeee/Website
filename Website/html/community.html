@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Community - WSC Esports</title>
+    <link rel="stylesheet" href="/Website/css/main.css">
+    <link rel="stylesheet" href="/Website/css/community.css">
+    <script src="/Website/js/community_post.js" defer></script>
+    <script src="/Website/js/comm.js" defer></script>
+</head>
+<body>
+    <script>
+        // Check if user is logged in
+        if (!localStorage.getItem("isLoggedIn")) {
+            alert("You must be logged in to access the community page.");
+            window.location.href = "login.html"; // Redirect to login page
+        }
+    </script>
+
+    <header>
+        <img src="/Website/images/logo.png" alt="West Suffolk Wolves Logo" 
+        width="200"
+        height="200"/>
+        <nav>
+            <a href="/Website/html/index.html">Home</a>
+            <a href="/Website/html/teams.html">Teams</a>
+            <a href="/Website/html/contact.html">Contact Us</a>
+            <a href="/Website/html/login.html">Login/Register</a>
+            <a href="/Website/html/shop.html">Shop</a>
+            <a href="/Website/html/community.html">Community</a>
+            <a href="/Website/html/upcoming.html">Upcoming</a>
+            <a href="/Website/html/news.html">News</a>
+            <button id="logout-button" class="nav-button">Logout</button> <!-- Logout Button -->
+        </nav>
+    </header>
+
+    <section class="community">
+        <h2>Community Posts</h2>
+
+            <!-- Upload Post Form -->
+    <form id="upload-post-form" enctype="multipart/form-data">
+        <h3>Upload a New Post</h3>
+        <label for="post-title">Title:</label>
+        <input type="text" id="post-title" placeholder="Enter post title" required>
+
+        <label for="post-image">Image:</label>
+        <input type="file" id="post-image" accept="image/*" required>
+
+        <label for="post-description">Description:</label>
+        <textarea id="post-description" placeholder="Write your post description here..." required></textarea>
+
+        <button type="submit">Submit Post</button>
+    </form>
+
+    <div class="posts-container">
+        <!-- Existing posts will be displayed here -->
+    </div>
+    </section>
+    
+    <script src="/Website/js/community1.js"></script>
+    <footer>
+        <p>© 2024 WSC Esports. All Rights Reserved.</p>
+    </footer>
+    
+    </body>
+    </html>

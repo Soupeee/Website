@@ -1,0 +1,172 @@
+/* General Reset */
+* {
+    margin: 10;
+    padding: 20;
+    box-sizing: border-box;
+}
+
+/* Body */
+body {
+    background-color: #1c1c1a; /* Dark gray background */
+    color: #ffffff; /* White text for readability */
+    font-family: Arial, Helvetica, sans-serif;
+    align-items: center;
+}
+
+/* Header */
+header {
+    background-color: #0f0b0b; /* Very dark gray */
+    padding: 20px;
+    text-align: center;
+}
+
+header h1 {
+    color: #e40613; /* Red accent color */
+    font-size: 36px;
+}
+
+/* Navigation */
+nav {
+    display: flex;
+    justify-content: center; /* Center the nav items */
+    align-items: center; /* Align items vertically */
+    gap: 15px; /* Space between items */
+    margin: 20px 0;
+    margin-top: 10px;
+}
+
+nav a {
+    margin-top: 10px;
+    color: #e40613; /* Red accent for links */
+    text-decoration: none; /* Remove underline from links */
+    padding: 8px 16px; /* Add padding for better click area */
+    border: 1px solid #e40613; /* Red border for accents */
+    border-radius: 4px;
+    font-size: 16px; /* Ensure consistent font size */
+    line-height: 1.5; /* Ensure consistent line height */
+    transition: background-color 0.3s; /* Smooth transition */
+}
+
+.nav-button {
+    margin-top: 10px;
+    background-color: transparent; /* Make the logout button background transparent */
+    color: #e40613; /* Red accent for the button */
+    border: 1px solid #e40613; /* Red border for accents */
+    border-radius: 4px;
+    font-size: 16px; /* Ensure consistent font size */
+    line-height: 1.5; /* Ensure consistent line height */
+    padding: 8px 16px; /* Same padding for all buttons */
+    cursor: pointer; /* Pointer on hover */
+    transition: background-color 0.3s; /* Smooth transition */
+}
+
+nav a:hover, .nav-button:hover {
+    background-color: #e40613; /* Red background on hover */
+    color: #1c1c1a; /* Dark gray text on hover */
+}
+
+/* Optional: Add focus styles for accessibility */
+.nav-button:focus {
+    outline: none; /* Remove default outline */
+    box-shadow: 0 0 0 3px rgba(228, 6, 19, 0.5); /* Add a custom focus outline */
+}
+
+/* Main Content Area */
+main {
+    padding: 40px;
+    text-align: center;
+}
+
+/* Product Grid */
+.product-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+}
+
+/* Product Card */
+.product-card {
+    width: 200px;
+    background-color: #333333; /* Dark gray for card background */
+    color: #ffffff; /* White text for readability */
+    text-align: center;
+    padding: 20px;
+    border: 1px solid #0f0b0b; /* Subtle dark border */
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.product-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+}
+
+/* Product Image */
+.product-card img {
+    max-width: 100%;
+    border-radius: 8px;
+    margin-bottom: 10px;
+}
+
+/* Product Title */
+.product-card h3 {
+    font-size: 20px;
+    color: #e40613; /* Red accent for product titles */
+    margin: 10px 0;
+}
+
+/* Product Description */
+.product-card p {
+    font-size: 14px;
+    color: #cccccc; /* Light gray for descriptions */
+    margin-bottom: 15px;
+}
+
+/* Banner and text styling */
+.hero {
+    text-align: center;
+    padding: 30px;
+    background-color: #cf000e;
+    color: white;
+}
+
+/* Footer */
+footer {
+    background-color: #0f0b0b; /* Very dark gray */
+    color: #cccccc; /* Light gray text */
+    text-align: center;
+    padding: 20px;
+    margin-top: 40px;
+}
+
+footer p {
+    font-size: 14px;
+}
+
+button, .checkout-button {
+    display: inline-block;
+    margin-top: 10px;
+    padding: 10px 20px;
+    background-color: #e40613; /* Red background */
+    color: #1c1c1a; /* Dark gray text */
+    font-weight: bold;
+    text-decoration: none;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+button:hover, .checkout-button:hover {
+    background-color: #c3050f; /* Darker red on hover */
+}
+
+.navigation-buttons {
+    display: flex;
+    align-items: center; /* Vertically center the buttons and progress indicator */
+    justify-content: center; /* Horizontally center the buttons and progress indicator */
+    gap: 20px; /* Add space between the buttons and progress indicator */
+    margin-top: 20px;
+}

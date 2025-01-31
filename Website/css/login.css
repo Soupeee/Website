@@ -1,0 +1,104 @@
+/* login.css */
+
+/* General styles for the login page */
+.login-page {
+    font-family: Arial, sans-serif;
+    background-color: #1c1c1a; /* Dark background */
+    color: #ffffff; /* White text */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh; /* Full height for centering */
+    margin: 0; /* Remove default margin */
+}
+
+/* Header styles specific to login page */
+.login-page header {
+    margin-bottom: 20px; /* Space below header */
+}
+
+/* Login container */
+.login-container {
+    background-color: #272727; /* Darker background for the form */
+    padding: 40px; /* Padding inside the container */
+    border-radius: 8px; /* Rounded corners */
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.5); /* Subtle shadow */
+    width: 300px; /* Fixed width for the form */
+    justify-content: center;
+    grid-template-columns: 1fr 1fr; /* Two equal columns */
+    gap: 20px; /* Space between the two forms */
+}
+
+/* Form title */
+.login-container h2 {
+    text-align: center; /* Center the title */
+    color: #e40613; /* Accent color for the heading */
+    margin-bottom: 20px; /* Space below the heading */
+}
+
+/* Form group styles */
+.form-group {
+    margin-bottom: 20px; /* Space between form groups */
+}
+
+.login-container label {
+    display: block; /* Each label on a new line */
+    margin-bottom: 8px; /* Space below labels */
+    font-weight: bold; /* Bold labels */
+    color: #ffffff; /* White text for labels */
+}
+
+.login-container input {
+    width: 100%; /* Full width inputs */
+    padding: 10px; /* Padding inside inputs */
+    margin-bottom: 10px; /* Space below inputs */
+    border: 1px solid #444; /* Border color */
+    border-radius: 4px; /* Rounded corners */
+    background-color: #3c3c3c; /* Darker input background */
+    color: #ffffff; /* Input text color */
+}
+
+.login-container input:focus {
+    border-color: #e40613; /* Accent color on focus */
+    outline: none; /* Remove outline */
+}
+
+/* Button styles */
+.btn {
+    background-color: #e40613; /* Button background color */
+    color: #ffffff; /* Button text color */
+    padding: 10px 15px; /* Padding for button */
+    border: 1px solid #e40613; /* Red border for accents */
+    border-radius: 4px; /* Rounded corners */
+    cursor: pointer; /* Pointer on hover */
+    font-size: 16px; /* Font size */
+    width: 100%; /* Full width button */
+    transition: background-color 0.3s, color 0.3s; /* Smooth transition */
+}
+
+.btn:hover {
+    background-color: #cf000e; /* Darker red on hover */
+    color: #1c1c1a; /* Dark gray text on hover */
+}
+
+/* Footer styles */
+.login-page footer {
+    text-align: center; /* Center footer text */
+    margin-top: 20px; /* Space above footer */
+    color: #ffffff; /* White text for footer */
+}
+
+/* Responsive Design */
+@media (max-width: 600px) {
+    .auth-container {
+      grid-template-columns: 1fr; /* Stack forms vertically on small screens */
+    }
+  }
+
+main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}

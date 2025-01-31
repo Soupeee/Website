@@ -1,0 +1,117 @@
+.player-details {
+    text-align: center;
+    margin: 20px;
+}
+
+.player-stats {
+    text-align: left;
+    margin-top: 20px;
+}
+
+.player-stats ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.player-stats li {
+    font-size: 18px;
+    margin: 5px 0;
+}
+
+.player-stats p {
+    font-size: 18px;
+    margin: 20px 0;
+}
+
+.basic-info {
+    padding-right: 10px;
+    border-right: 1px solid #e40613;
+}
+
+.basic-info, .player-stats {
+    flex: 1;
+    margin: 10px;
+}
+
+.player-about {
+    margin-top: 20px;
+    text-align: left;
+}
+
+.player-info-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-top: 20px;
+    margin-right: -15px;
+    text-align: left;
+}
+
+.social-links {
+    display: flex; /* Arrange buttons in a row */
+    justify-content: center; /* Center the buttons horizontally */
+    gap: 10px; /* Add space between buttons */
+    margin-top: 10px; /* Add some space above the buttons */
+}
+
+/* Social buttons container */
+.social-button {
+    display: flex; /* Arrange buttons in a row */
+    justify-content: center; /* Center the buttons horizontally */
+    gap: 15px; /* Add space between buttons */
+    margin-top: 20px; /* Add some space above the buttons */
+}
+
+/* Base button styling */
+.social-button {
+    text-decoration: none; /* Remove underline */
+    color: white; /* Text color */
+    font-size: 16px;
+    padding: 10px 20px; /* Add padding to make it look like a button */
+    border-radius: 5px; /* Rounded corners */
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    display: inline-block; /* Ensure buttons behave like blocks */
+}
+
+/* Hover effect */
+.social-button:hover {
+    transform: translateY(-2px); /* Slight lift effect on hover */
+}
+
+/* Platform-specific colors */
+.social-button.twitter {
+    background-color: #1da1f2; /* Twitter blue */
+}
+
+.social-button.instagram {
+    background-color: #e1306c; /* Instagram pink */
+}
+
+.social-button.facebook {
+    background-color: #1877f2; /* Facebook blue */
+}
+
+.social-button.linkedin {
+    background-color: #0a66c2; /* LinkedIn blue */
+}
+
+/* Optional: Add icons using FontAwesome or similar */
+.social-button::before {
+    margin-right: 8px; /* Add space between icon and text */
+}
+
+.social-button.twitter::before {
+    content: "🐦"; /* Twitter icon */
+}
+
+.social-button.instagram::before {
+    content: "📸"; /* Instagram icon */
+}
+
+.social-button.facebook::before {
+    content: "📘"; /* Facebook icon */
+}
+
+.social-button.linkedin::before {
+    content: "🔗"; /* LinkedIn icon */
+}

@@ -1,0 +1,189 @@
+/* Container styling */
+.team-container {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+    border: 2px solid #424242;
+    border-radius: 10px;
+    background-color: #333333;
+    text-align: center;
+}
+
+/* Player profile styling */
+.player-profile {
+    display: none; /* Hide all profiles by default */
+    text-align: center;
+    margin: 20px 0;
+}
+
+.player-profile.active {
+    display: block; /* Show the active profile */
+}
+
+.player-profile img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    margin-bottom: 10px;
+}
+
+.player-profile h2 {
+    margin: 10px 0;
+    font-size: 24px;
+}
+
+.player-profile a {
+    display: inline-block;
+    margin-top: 10px;
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+.player-profile a:hover {
+    background-color: #0056b3;
+}
+
+/* Navigation buttons styling */
+.navigation-buttons {
+    margin-top: 20px;
+}
+
+.navigation-buttons button {
+    padding: 10px 20px;
+    margin: 0 10px;
+    font-size: 16px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.navigation-buttons button:hover {
+    background-color: #0056b3;
+}
+
+.navigation-buttons button:active {
+    transform: scale(0.95); /* Add a slight "press" effect */
+}
+
+/* Progress indicator styling */
+.progress-indicator {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin: 10px 0;
+}
+
+.progress-indicator .dot {
+    width: 10px;
+    height: 10px;
+    background-color: #ccc;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.progress-indicator .dot.active {
+    background-color: #007bff; /* Highlight the active dot */
+}
+
+/* Player profile container */
+#team-grid {
+    position: relative;
+    overflow: hidden; /* Hide overflowing content */
+    height: 300px; /* Adjust based on your content height */
+}
+
+/* Player profile styling */
+.player-profile {
+    position: absolute;
+    width: 100%;
+    top: 0;
+    left: 0;
+    opacity: 0; /* Start with 0 opacity */
+    transform: translateX(100%); /* Start off-screen to the right */
+    transition: opacity 0.5s ease-in-out, transform 0.5s ease-in-out;
+}
+
+.player-profile.active {
+    opacity: 1; /* Fade in the active profile */
+    transform: translateX(0); /* Slide into view */
+}
+
+.player-profile.prev {
+    transform: translateX(-100%); /* Slide out to the left */
+}
+
+.social-links {
+    display: flex; /* Arrange buttons in a row */
+    justify-content: center; /* Center the buttons horizontally */
+    gap: 10px; /* Add space between buttons */
+    margin-top: 10px; /* Add some space above the buttons */
+}
+
+/* Social buttons container */
+.social-button {
+    display: flex; /* Arrange buttons in a row */
+    justify-content: center; /* Center the buttons horizontally */
+    gap: 15px; /* Add space between buttons */
+    margin-top: 20px; /* Add some space above the buttons */
+}
+
+/* Base button styling */
+.social-button {
+    text-decoration: none; /* Remove underline */
+    color: white; /* Text color */
+    font-size: 16px;
+    padding: 10px 20px; /* Add padding to make it look like a button */
+    border-radius: 5px; /* Rounded corners */
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    display: inline-block; /* Ensure buttons behave like blocks */
+}
+
+/* Hover effect */
+.social-button:hover {
+    transform: translateY(-2px); /* Slight lift effect on hover */
+}
+
+/* Platform-specific colors */
+.social-button.twitter {
+    background-color: #1da1f2; /* Twitter blue */
+}
+
+.social-button.instagram {
+    background-color: #e1306c; /* Instagram pink */
+}
+
+.social-button.facebook {
+    background-color: #1877f2; /* Facebook blue */
+}
+
+.social-button.linkedin {
+    background-color: #0a66c2; /* LinkedIn blue */
+}
+
+/* Optional: Add icons using FontAwesome or similar */
+.social-button::before {
+    margin-right: 8px; /* Add space between icon and text */
+}
+
+.social-button.twitter::before {
+    content: "🐦"; /* Twitter icon */
+}
+
+.social-button.instagram::before {
+    content: "📸"; /* Instagram icon */
+}
+
+.social-button.facebook::before {
+    content: "📘"; /* Facebook icon */
+}
+
+.social-button.linkedin::before {
+    content: "🔗"; /* LinkedIn icon */
+}

@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Checkout - WSC Esports</title>
+    <link rel="stylesheet" href="/Website/css/main.css">
+    <link rel="stylesheet" href="/Website/css/checkout.css">
+    <script src="/Website/js/cart.js" defer></script>
+    <script src="/Website/js/shop.js" defer></script>
+</head>
+<body>
+
+<header>
+    <nav class="navbar">
+        <a href="index.html"><img src="/Website/images/logo.png" alt="WSC Logo" class="logo" 
+            width="200"
+            height="200"/></a>
+    </nav>
+</header>
+
+<main>
+    <section class="checkout"> 
+        <h2>Checkout</h2>
+        <p>Pay on campus</p>
+        <p>This is your purchase code below:</p>
+        <div class="code-display">
+            <span id="random-code">Generating Code...</span>
+        </div>
+        <div id="cart-items"></div>
+        <p>Total: £<span id="total-price">0.00</span></p>
+        <button onclick="checkout()">Complete Purchase</button>
+        
+    </section>
+</main>
+    <footer>
+        <p>© 2024 WSC Esports. All Rights Reserved.</p>
+    </footer>
+    <script src="/Website/js/shop.js"></script>
+
+</body>
+</html>
+

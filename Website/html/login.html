@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login/Register</title>
+    <link rel="stylesheet" href="/Website/css/login.css">
+    <link rel="stylesheet" href="/Website/css/main.css">
+    <script>
+    // Simple simulation of login
+    document.addEventListener("DOMContentLoaded", function() {
+        document.getElementById("login-form").addEventListener("submit", function(event) {
+            event.preventDefault();
+            const username = document.getElementById("username").value;
+            const password = document.getElementById("password").value;
+
+            // Mock credentials for testing
+            if (username === "testuser" && password === "password123") {
+                alert("Login successful!");
+                localStorage.setItem("isLoggedIn", "true"); // Set login status in session storage
+                location.href = "community.html"; // Redirect to community page
+            } else {
+                alert("Invalid username or password.");
+            }
+        });
+    });
+  </script>
+</head>
+<body>
+    <header>
+        <img src="/Website/images/logo.png" alt="West Suffolk Wolves Logo" 
+        width="200"
+        height="200"/>
+        <nav>
+            <a href="/Website/html/index.html">Home</a>
+            <a href="/Website/html/teams.html">Teams</a>
+            <a href="/Website/html/contact.html">Contact Us</a>
+            <a href="/Website/html/login.html">Login/Register</a>
+            <a href="/Website/html/shop.html">Shop</a>
+            <a href="/Website/html/community.html">Community</a>
+            <a href="/Website/html/upcoming.html">Upcoming</a>
+            <a href="/Website/html/news.html">News</a>
+        </nav>
+    </header>
+    
+    <main>
+        <div class="login-container">
+            <h2>Register</h2>
+            <form id="register-form">
+                <div class="form-group">
+                    <label for="new-username">Username</label>
+                    <input type="text" id="new-username" placeholder="Choose a username" required>
+                </div>
+                <div class="form-group">
+                    <label for="new-email">Email</label>
+                    <input type="email" id="new-email" placeholder="Enter your email" required>
+                </div>
+                <div class="form-group">
+                    <label for="new-password">Password</label>
+                    <input type="password" id="new-password" placeholder="Create a password" required>
+                </div>
+                <button type="submit" class="btn">Register</button>
+            </form>
+        </div>
+        <div class="login-container">
+            <h2>Login</h2>
+            <form id="login-form">
+                <div class="form-group">
+                    <label for="username">Username</label>
+                    <input type="text" id="username" placeholder="Enter your username" required>
+                </div>
+                <div class="form-group">
+                    <label for="password">Password</label>
+                    <input type="password" id="password" placeholder="Enter your password" required>
+                </div>
+                <button type="submit" class="btn">Login</button>
+            </form>
+        </div>
+    </main>
+    
+    <footer>
+        <p>© 2024 WSC Esports. All Rights Reserved.</p>
+    </footer>
+</body>
+</html>

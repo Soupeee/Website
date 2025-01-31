@@ -1,0 +1,46 @@
+/* Button Styling */
+button, .checkout-button {
+    display: inline-block;
+    margin-top: 10px;
+    padding: 10px 20px;
+    background-color: #e40613; /* Red background */
+    color: #1c1c1a; /* Dark gray text */
+    font-weight: bold;
+    text-decoration: none;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+button:hover, .checkout-button:hover {
+    background-color: #c3050f; /* Darker red on hover */
+}
+
+
+
+.code-display {
+    margin: 20px 0;
+    padding: 15px;
+    background-color: #222222;
+    border: 1px solid #0e0e0e;
+    border-radius: 5px;
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #ff6600;
+    max-width: 100%; /* Ensure the code display doesn't overflow */
+    overflow: hidden; /* Hide overflow */
+    white-space: nowrap; /* Prevent text from wrapping */
+    text-overflow: ellipsis; /* Add ellipsis if text overflows */
+    display: flex;
+    justify-content: center; /* Center the code horizontally */
+    align-items: center; /* Center the code vertically */
+  }
+
+.checkout-container {
+    text-align: center;
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}

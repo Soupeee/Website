@@ -1,0 +1,154 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+}
+
+.news-article {
+    background-color: #333;
+    padding: 20px;
+    border: 1px solid #ddd;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.news-article h2 {
+    margin-top: 0;
+}
+
+.news-article ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.news-article li {
+    margin-bottom: 20px;
+}
+
+.news-article h3 {
+    margin-top: 0;
+}
+
+thead {
+    background-color: #1d1d1b;
+    color: #ffffff;
+}
+
+thead th {
+    padding: 10px;
+    font-size: 18px;
+}
+
+tbody tr:nth-child(even) {
+    background-color: #4e4e4e;
+}
+
+tbody tr:nth-child(odd) {
+    background-color: #6d6c6c;
+}
+
+tbody td {
+    padding: 10px;
+    font-size: 16px;
+}
+
+tbody tr:hover {
+    background-color: #999999;
+}
+
+tfoot {
+    background-color: #e40613;
+    color: white;
+    text-align: center;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 20px 0;
+    background-color: #fefefe;
+    border: 4px solid #111111;
+    text-align: center;
+}
+
+.sponsors-section {
+    padding: 20px;
+    margin: 0 17px 30px;
+    background-color: #fefefe; 
+}
+
+.social-links {
+    display: flex; /* Arrange buttons in a row */
+    justify-content: center; /* Center the buttons horizontally */
+    gap: 10px; /* Add space between buttons */
+    margin-top: 10px; /* Add some space above the buttons */
+}
+
+/* Social buttons container */
+.social-button {
+    display: flex; /* Arrange buttons in a row */
+    justify-content: center; /* Center the buttons horizontally */
+    gap: 15px; /* Add space between buttons */
+    margin-top: 20px; /* Add some space above the buttons */
+}
+
+/* Base button styling */
+.social-button {
+    text-decoration: none; /* Remove underline */
+    color: white; /* Text color */
+    font-size: 16px;
+    padding: 10px 20px; /* Add padding to make it look like a button */
+    border-radius: 5px; /* Rounded corners */
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    display: inline-block; /* Ensure buttons behave like blocks */
+}
+
+/* Hover effect */
+.social-button:hover {
+    transform: translateY(-2px); /* Slight lift effect on hover */
+}
+
+/* Platform-specific colors */
+.social-button.twitter {
+    background-color: #1da1f2; /* Twitter blue */
+}
+
+.social-button.instagram {
+    background-color: #e1306c; /* Instagram pink */
+}
+
+.social-button.facebook {
+    background-color: #1877f2; /* Facebook blue */
+}
+
+.social-button.linkedin {
+    background-color: #0a66c2; /* LinkedIn blue */
+}
+
+/* Optional: Add icons using FontAwesome or similar */
+.social-button::before {
+    margin-right: 8px; /* Add space between icon and text */
+}
+
+.social-button.twitter::before {
+    content: "🐦"; /* Twitter icon */
+}
+
+.social-button.instagram::before {
+    content: "📸"; /* Instagram icon */
+}
+
+.social-button.facebook::before {
+    content: "📘"; /* Facebook icon */
+}
+
+.social-button.linkedin::before {
+    content: "🔗"; /* LinkedIn icon */
+}
